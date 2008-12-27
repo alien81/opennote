@@ -53,6 +53,7 @@ private slots:
     void filePrint();
     void filePrintPreview();
     void filePrintPdf();
+    void openPropertiesDialog();
 
     void textBold();
     void textUnderline();
@@ -101,7 +102,8 @@ private:
         *actionListBullets,
         *actionListNumering,
         *actionHyperlink,
-        *actionEtc;
+        *actionEtc,
+        *actionSetup;
 
 
     QComboBox *comboStyle;

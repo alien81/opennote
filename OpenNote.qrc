@@ -99,6 +99,8 @@
         <file>images/win/fileopen.png</file>
         <file>images/win/fileprint.png</file>
         <file>images/win/filesave.png</file>
+        <file>images/win/pagefold.png</file>
+        <file>images/win/santa.png</file>
         <file>images/win/textbold.png</file>
         <file>images/win/textcenter.png</file>
         <file>images/win/textitalic.png</file>
@@ -106,6 +108,7 @@
         <file>images/win/textleft.png</file>
         <file>images/win/textright.png</file>
         <file>images/win/textunder.png</file>
+        <file>images/win/wall.png</file>
         <file>images/win/zoomin.png</file>
         <file>images/win/zoomout.png</file>
     </qresource>

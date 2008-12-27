@@ -1,4 +1,6 @@
 #include "TextEditorWindow.h"
+#include "SwissKnife.h"
+
 #include <QApplication>
 #include <QtGui>
 #include <QAbstractItemModel>
@@ -51,6 +53,11 @@ int main( int argc, char ** argv )
     QApplication app( argc, argv );
     TextEditorWindow mw;
 
+    QFile file("qss/coffee.qss");
+    if(file.open(QFile::ReadOnly))
+    {
+    	app.setStyleSheet(QLatin1String(file.readAll()));
+    }
     //mw.setWindowFlags(Qt::MSWindowsFixedSizeDialogHint);
     mw.setWindowTitle(ApplicationName);
     mw.statusBar()->showMessage("Editing");

@@ -166,6 +166,10 @@ void TextEditorWindow::setupFileActions()
     connect(a, SIGNAL(triggered()), this, SLOT(filePrintPdf()));
     menu->addAction(a);
 
+    a = new QAction(QIcon(rsrcPath + "/Advanced Options.png"), tr("&Properties"), this);
+    connect(a, SIGNAL(triggered()), this, SLOT(openPropertiesDialog()));
+    menu->addAction(a);
+
     menu->addSeparator();
 
     a = new QAction(tr("&Quit"), this);
@@ -451,6 +455,10 @@ void TextEditorWindow::printPreview(QPrinter *printer)
 #endif
 }
 
+void TextEditorWindow::openPropertiesDialog()
+{
+	SwissKnife::printString("open properties Dialog");
+}
 
 void TextEditorWindow::filePrintPdf()
 {
